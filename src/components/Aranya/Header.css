@@ -29,8 +29,6 @@
 
 header#header {
   /* background: #f9fdfc; */
-  background-image: url('/wallpaper1.jpg');
-
   box-shadow: 0 1px 10px rgba(44, 183, 78, 0.08);
   border-bottom: 1px solid #e0f7ef;
   padding: 0.3rem 0;

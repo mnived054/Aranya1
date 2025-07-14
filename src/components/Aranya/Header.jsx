@@ -4,6 +4,7 @@ import axios from 'axios';
 import './Header.css';
 import TopBanner from './TopBanner';
 import Logo from "/src/assets/logo.png";
+import wallpaper from '../../assets/wallpaper1.jpg';
 
 function Header({ toggleVrMode }) {
   const [navOpen, setNavOpen] = useState(false);
@@ -88,7 +89,7 @@ function Header({ toggleVrMode }) {
 
   return (
     <>
-      <header id="header" className={`header fixed-top w-100 shadow-sm ${showPlantIdentifier ? 'd-none' : ''}`}>
+      <header id="header" style={{ backgroundImage: `url(${wallpaper})`, backgroundSize: 'cover', backgroundPosition: 'center' }} className={`header fixed-top w-100 shadow-sm ${showPlantIdentifier ? 'd-none' : ''}`}>
         <TopBanner />
         <nav className="navbar navbar-expand-lg navbar-light container py-1">
           <NavLink to="/" className="navbar-brand d-flex align-items-center gap-2">
